@@ -143,7 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
     viewRecapIg: "View recap on Instagram",
     bdayApproach: "A festival designed as a collective tribute, built with HelloYouArtist and BeyhiveFrance to celebrate 20 years of B'DAY at the crossroads of pop culture and fan community.",
     bdayRole: "lllk.prod was responsible for photo content creation (published) and video content, which will appear in a long-form piece coming out in September 2026.",
-    bdayImpact: "<em>Results to be confirmed.</em>",
 
     closeAria: "Close",
     prevProjectAria: "Previous project",
