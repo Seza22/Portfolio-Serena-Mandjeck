@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=13">
+<link rel="stylesheet" href="css/style.css?v=14">
 </head>
 <body>
 
@@ -17,20 +17,22 @@
 <header class="navbar" id="navbar">
   <div class="navbar-inner container">
     <nav class="navbar-links" aria-label="Navigation principale">
-      <a href="#a-propos" class="nav-link">À Propos</a>
-      <a href="#stack" class="nav-link">Stack</a>
-      <a href="#projets" class="nav-link">Projets</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#a-propos" class="nav-link" data-i18n="navAbout">À Propos</a>
+      <a href="#stack" class="nav-link" data-i18n="navStack">Stack</a>
+      <a href="#projets" class="nav-link" data-i18n="navProjects">Projets</a>
+      <a href="#contact" class="nav-link" data-i18n="navContact">Contact</a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to English">FR / EN</button>
     </nav>
-    <button class="navbar-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+    <button class="navbar-burger" id="navBurger" data-i18n-aria="navBurgerAria" aria-label="Ouvrir le menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
   <nav class="navbar-mobile" id="navMobile" aria-label="Navigation mobile">
-    <a href="#a-propos" class="nav-link">À Propos</a>
-    <a href="#stack" class="nav-link">Stack</a>
-    <a href="#projets" class="nav-link">Projets</a>
-    <a href="#contact" class="nav-link">Contact</a>
+    <a href="#a-propos" class="nav-link" data-i18n="navAbout">À Propos</a>
+    <a href="#stack" class="nav-link" data-i18n="navStack">Stack</a>
+    <a href="#projets" class="nav-link" data-i18n="navProjects">Projets</a>
+    <a href="#contact" class="nav-link" data-i18n="navContact">Contact</a>
+    <button class="lang-toggle" id="langToggleMobile" type="button" aria-label="Switch to English">FR / EN</button>
   </nav>
 </header>
 
@@ -41,9 +43,9 @@
 
   <div class="container hero-content">
     <h1 class="hero-title reveal">MANDJECK Serena<br><span class="serif-italic">Creative Strategist</span></h1>
-    <p class="hero-subheadline reveal">Quand la Data rencontre la <span class="serif-italic">Culture</span> &amp; l'IA Générative.</p>
-    <p class="hero-pitch reveal">Riche de 3,5 ans d'expérience en Marketing Operations &amp; Content Strategy chez Susu, je raconte des histoires à travers l'image, la vidéo et les réseaux sociaux, en m'appuyant sur la donnée pour cadrer chaque décision et construire des campagnes et des expériences de marque à fort impact.</p>
-    <a href="#projets" class="btn btn-primary reveal">
+    <p class="hero-subheadline reveal" data-i18n-html="heroSubheadline">Quand la Data rencontre la <span class="serif-italic">Culture</span> &amp; l'IA Générative.</p>
+    <p class="hero-pitch reveal" data-i18n="heroPitch">Riche de 3,5 ans d'expérience en Marketing Operations &amp; Content Strategy chez Susu, je raconte des histoires à travers l'image, la vidéo et les réseaux sociaux, en m'appuyant sur la donnée pour cadrer chaque décision et construire des campagnes et des expériences de marque à fort impact.</p>
+    <a href="#projets" class="btn btn-primary reveal" data-i18n="heroCta">
       Explorer mes Projets
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
@@ -58,20 +60,20 @@
     <div class="stats-band-grid">
       <div class="stat-block reveal">
         <span class="stat-block-number stat-culture">36K+</span>
-        <span class="stat-block-label">vues sur RACINE</span>
-        <span class="stat-annotation">et c'est que le début</span>
+        <span class="stat-block-label" data-i18n="statRacineLabel">vues sur RACINE</span>
+        <span class="stat-annotation" data-i18n="statRacineAnnotation">et c'est que le début</span>
       </div>
       <div class="stat-block reveal">
         <span class="stat-block-number stat-data">+1M</span>
-        <span class="stat-block-label">impressions générées</span>
+        <span class="stat-block-label" data-i18n="statImpressions">impressions générées</span>
       </div>
       <div class="stat-block reveal">
         <span class="stat-block-number stat-culture">3</span>
-        <span class="stat-block-label">éditions Creatown</span>
+        <span class="stat-block-label" data-i18n="statCreatown">éditions Creatown</span>
       </div>
       <div class="stat-block reveal">
         <span class="stat-block-number stat-data">30+</span>
-        <span class="stat-block-label">campagnes Meta &amp; TikTok Ads</span>
+        <span class="stat-block-label" data-i18n="statAds">campagnes Meta &amp; TikTok Ads</span>
       </div>
     </div>
   </div>
@@ -82,8 +84,8 @@
   <div class="container">
     <div class="about-intro">
       <div class="about-intro-text">
-        <p class="section-kicker reveal">Fondations &amp; Parcours</p>
-        <h2 class="section-title reveal">Une double culture : <span class="serif-italic">Data Marketing</span> &amp; Direction Créative</h2>
+        <p class="section-kicker reveal" data-i18n="aboutKicker">Fondations &amp; Parcours</p>
+        <h2 class="section-title reveal" data-i18n-html="aboutTitle">Une double culture : <span class="serif-italic">Data Marketing</span> &amp; Direction Créative</h2>
       </div>
       <div class="about-photo reveal">
         <div class="about-photo-frame">
@@ -98,29 +100,29 @@
     </div>
 
     <div class="genz-statement reveal">
-      <p><span class="serif-italic">Native d'une génération qui a grandi avec les réseaux sociaux</span>, je me suis très tôt interrogée sur leur fonctionnement : pourquoi un contenu devient viral, comment une marque se construit en ligne, ce qui fait qu'une audience s'attache à une histoire plutôt qu'à une autre. Cette curiosité est devenue un métier : je transforme aujourd'hui cette intuition en décisions, toujours validées par la donnée pour être sûre de faire le bon choix.</p>
+      <p data-i18n-html="genzStatement"><span class="serif-italic">Native d'une génération qui a grandi avec les réseaux sociaux</span>, je me suis très tôt interrogée sur leur fonctionnement : pourquoi un contenu devient viral, comment une marque se construit en ligne, ce qui fait qu'une audience s'attache à une histoire plutôt qu'à une autre. Cette curiosité est devenue un métier : je transforme aujourd'hui cette intuition en décisions, toujours validées par la donnée pour être sûre de faire le bon choix.</p>
     </div>
 
     <div class="desktop-panel reveal">
       <div class="desktop-menubar">
         <span class="menubar-dot"></span>
         <span>Finder</span>
-        <span class="menubar-meta">2 éléments</span>
+        <span class="menubar-meta" data-i18n="menubarItems">2 éléments</span>
       </div>
       <div class="desktop-icons">
-        <div class="desktop-icon" data-modal="education" tabindex="0" role="button" aria-label="Ouvrir le dossier Éducation">
+        <div class="desktop-icon" data-modal="education" tabindex="0" role="button" data-i18n-aria="openEducationAria" aria-label="Ouvrir le dossier Éducation">
           <svg viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 10C2 6.68629 4.68629 4 8 4H24L30 10H56C59.3137 10 62 12.6863 62 16V42C62 45.3137 59.3137 48 56 48H8C4.68629 48 2 45.3137 2 42V10Z" fill="url(#folderGradA)"/>
             <defs><linearGradient id="folderGradA" x1="2" y1="4" x2="62" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#7FC0F8"/><stop offset="1" stop-color="#0A84FF"/></linearGradient></defs>
           </svg>
-          <span class="desktop-icon-label">Éducation</span>
+          <span class="desktop-icon-label" data-i18n="educationLabel">Éducation</span>
         </div>
-        <div class="desktop-icon" data-modal="experience" tabindex="0" role="button" aria-label="Ouvrir le dossier Expérience">
+        <div class="desktop-icon" data-modal="experience" tabindex="0" role="button" data-i18n-aria="openExperienceAria" aria-label="Ouvrir le dossier Expérience">
           <svg viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 10C2 6.68629 4.68629 4 8 4H24L30 10H56C59.3137 10 62 12.6863 62 16V42C62 45.3137 59.3137 48 56 48H8C4.68629 48 2 45.3137 2 42V10Z" fill="url(#folderGradB)"/>
             <defs><linearGradient id="folderGradB" x1="2" y1="4" x2="62" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#7FC0F8"/><stop offset="1" stop-color="#0A84FF"/></linearGradient></defs>
           </svg>
-          <span class="desktop-icon-label">Expérience</span>
+          <span class="desktop-icon-label" data-i18n="experienceLabel">Expérience</span>
         </div>
       </div>
     </div>
@@ -132,10 +134,10 @@
   <div class="container">
     <div class="section-header-split">
       <div>
-        <p class="section-kicker reveal">Outils &amp; Méthodes</p>
+        <p class="section-kicker reveal" data-i18n="stackKicker">Outils &amp; Méthodes</p>
         <h2 class="section-title reveal" style="margin-bottom:0">Stack &amp; <span class="serif-italic">Workflows</span></h2>
       </div>
-      <p class="section-header-note reveal">Trois piliers, un même réflexe : la donnée cadre la décision, l'image et la vidéo lui donnent un visage, le récit fait vivre la marque. Cliquez sur une carte pour voir comment ça se traduit au quotidien.</p>
+      <p class="section-header-note reveal" data-i18n="stackNote">Trois piliers, un même réflexe : la donnée cadre la décision, l'image et la vidéo lui donnent un visage, le récit fait vivre la marque. Cliquez sur une carte pour voir comment ça se traduit au quotidien.</p>
     </div>
 
     <div class="stack-grid">
@@ -146,21 +148,21 @@
           </div>
           <div>
             <h3>Data &amp; Performance BI</h3>
-            <p>Transformer des données brutes en décisions marketing claires, partagées et actionnables par toute l'équipe.</p>
+            <p data-i18n="stackCard1Desc">Transformer des données brutes en décisions marketing claires, partagées et actionnables par toute l'équipe.</p>
           </div>
         </div>
         <div class="tool-badges">
           <span class="tool-badge"><span class="tool-icon tool-icon-powerbi"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="3" y="12" width="4" height="9" rx="1" fill="currentColor"/><rect x="10" y="7" width="4" height="14" rx="1" fill="currentColor"/><rect x="17" y="3" width="4" height="18" rx="1" fill="currentColor"/></svg></span>Power BI</span>
           <span class="tool-badge"><span class="tool-icon tool-icon-looker"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/><path d="M12 4v8l6 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Looker Studio</span>
-          <span class="tool-badge"><span class="tool-icon tool-icon-excel"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke="currentColor" stroke-width="1.4"/></svg></span>Excel (TCD)</span>
+          <span class="tool-badge"><span class="tool-icon tool-icon-excel"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke="currentColor" stroke-width="1.4"/></svg></span><span data-i18n="toolExcel">Excel (TCD)</span></span>
           <span class="tool-badge"><span class="tool-icon tool-icon-meta"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12c0-4 2.5-6 4.5-6S12 9 12 12s2 6 4 6 4.5-2 4.5-6-2-6-4-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Meta Ads Manager</span>
         </div>
-        <button class="stack-expand-btn" type="button" aria-expanded="false">
+        <button class="stack-expand-btn" type="button" aria-expanded="false" data-i18n="inPractice">
           En pratique
           <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="stack-more">
-          <p>Je relie les résultats des campagnes Meta Ads aux objectifs business, je construis des reportings clairs pour les équipes marketing et direction, et je structure la donnée pour qu'elle reste fiable dans la durée.</p>
+          <p data-i18n="stackCard1More">Je relie les résultats des campagnes Meta Ads aux objectifs business, je construis des reportings clairs pour les équipes marketing et direction, et je structure la donnée pour qu'elle reste fiable dans la durée.</p>
         </div>
       </article>
 
@@ -171,7 +173,7 @@
           </div>
           <div>
             <h3>Generative AI &amp; Process Automation</h3>
-            <p>Concevoir des assistants IA sur-mesure et des process automatisés qui font vraiment gagner du temps aux équipes.</p>
+            <p data-i18n="stackCard2Desc">Concevoir des assistants IA sur-mesure et des process automatisés qui font vraiment gagner du temps aux équipes.</p>
           </div>
         </div>
         <div class="tool-badges">
@@ -183,12 +185,12 @@
           <span class="tool-badge"><span class="tool-icon tool-icon-typeform"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M12 6v14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>Typeform</span>
           <span class="tool-badge"><span class="tool-icon tool-icon-gems"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 6-7 12-7-12 7-6z" fill="currentColor"/></svg></span>Gems IA</span>
         </div>
-        <button class="stack-expand-btn" type="button" aria-expanded="false">
+        <button class="stack-expand-btn" type="button" aria-expanded="false" data-i18n="inPractice">
           En pratique
           <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="stack-more">
-          <p>Je conçois des assistants IA pensés pour des besoins précis (accélérer la production de contenu, fiabiliser l'analyse), puis j'automatise les workflows qui les entourent pour que ça tienne dans la durée. Je forme aussi les équipes pour que l'IA devienne un réflexe, pas un gadget.</p>
+          <p data-i18n="stackCard2More">Je conçois des assistants IA pensés pour des besoins précis (accélérer la production de contenu, fiabiliser l'analyse), puis j'automatise les workflows qui les entourent pour que ça tienne dans la durée. Je forme aussi les équipes pour que l'IA devienne un réflexe, pas un gadget.</p>
         </div>
       </article>
 
@@ -199,22 +201,22 @@
           </div>
           <div>
             <h3>Brand, Content &amp; Growth Strategy</h3>
-            <p>Raconter une marque à travers la photo, la vidéo et les réseaux sociaux, avec une voix claire qui rend le complexe accessible.</p>
+            <p data-i18n="stackCard3Desc">Raconter une marque à travers la photo, la vidéo et les réseaux sociaux, avec une voix claire qui rend le complexe accessible.</p>
           </div>
         </div>
         <div class="tool-badges">
-          <span class="tool-badge"><span class="tool-icon tool-icon-camera"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-2h6l2 2h3v11H4V8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="13.5" r="3.2" stroke="currentColor" stroke-width="1.8"/></svg></span>Photo &amp; Vidéo</span>
-          <span class="tool-badge"><span class="tool-icon tool-icon-social"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="12" r="2.4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6" r="2.4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="18" r="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 10.8L15.3 7.2M8.2 13.2l7.1 3.6" stroke="currentColor" stroke-width="1.6"/></svg></span>Réseaux Sociaux</span>
+          <span class="tool-badge"><span class="tool-icon tool-icon-camera"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-2h6l2 2h3v11H4V8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="13.5" r="3.2" stroke="currentColor" stroke-width="1.8"/></svg></span><span data-i18n="toolPhotoVideo">Photo &amp; Vidéo</span></span>
+          <span class="tool-badge"><span class="tool-icon tool-icon-social"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="12" r="2.4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6" r="2.4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="18" r="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 10.8L15.3 7.2M8.2 13.2l7.1 3.6" stroke="currentColor" stroke-width="1.6"/></svg></span><span data-i18n="toolSocial">Réseaux Sociaux</span></span>
           <span class="tool-badge"><span class="tool-icon tool-icon-pen"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 20l4.5-1.2 10.2-10.2-3.3-3.3L5.2 15.5 4 20z" fill="currentColor"/></svg></span>Copywriting</span>
           <span class="tool-badge"><span class="tool-icon tool-icon-doc"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>Content Strategy</span>
           <span class="tool-badge"><span class="tool-icon tool-icon-people"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="3.5" fill="currentColor"/><circle cx="16" cy="11" r="2.8" fill="currentColor" opacity="0.7"/></svg></span>Community Building</span>
         </div>
-        <button class="stack-expand-btn" type="button" aria-expanded="false">
+        <button class="stack-expand-btn" type="button" aria-expanded="false" data-i18n="inPractice">
           En pratique
           <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="stack-more">
-          <p>Je conçois la direction photo et vidéo de mes projets (RACINE, Les Ateliers Creatown, OUI OUI B'DAY), j'écris les contenus qui portent la voix de la marque sur les réseaux sociaux, et je traduis des sujets techniques en messages compréhensibles pour des audiences B2B et B2C, avec toujours l'acquisition en ligne de mire.</p>
+          <p data-i18n="stackCard3More">Je conçois la direction photo et vidéo de mes projets (RACINE, Les Ateliers Creatown, OUI OUI B'DAY), j'écris les contenus qui portent la voix de la marque sur les réseaux sociaux, et je traduis des sujets techniques en messages compréhensibles pour des audiences B2B et B2C, avec toujours l'acquisition en ligne de mire.</p>
         </div>
       </article>
     </div>
@@ -224,19 +226,19 @@
 <!-- ================= CASE STUDIES ================= -->
 <section class="section" id="projets">
   <div class="container">
-    <p class="section-kicker reveal">Sélection</p>
-    <h2 class="section-title reveal">Projets</h2>
+    <p class="section-kicker reveal" data-i18n="projectsKicker">Sélection</p>
+    <h2 class="section-title reveal" data-i18n="projectsTitle">Projets</h2>
 
     <div class="photos-toolbar reveal">
       <div class="photos-search">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        <input type="text" id="photosSearch" placeholder="Rechercher un projet, un tag...">
+        <input type="text" id="photosSearch" data-i18n-ph="searchPlaceholder" placeholder="Rechercher un projet, un tag...">
       </div>
-      <div class="photos-view-toggle" role="group" aria-label="Affichage">
-        <button type="button" class="active" data-view="grid" aria-label="Vue grille">
+      <div class="photos-view-toggle" role="group" data-i18n-aria="displayAria" aria-label="Affichage">
+        <button type="button" class="active" data-view="grid" data-i18n-aria="gridViewAria" aria-label="Vue grille">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="8" height="8" rx="1.5" fill="currentColor"/><rect x="13" y="3" width="8" height="8" rx="1.5" fill="currentColor"/><rect x="3" y="13" width="8" height="8" rx="1.5" fill="currentColor"/><rect x="13" y="13" width="8" height="8" rx="1.5" fill="currentColor"/></svg>
         </button>
-        <button type="button" data-view="list" aria-label="Vue liste">
+        <button type="button" data-view="list" data-i18n-aria="listViewAria" aria-label="Vue liste">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="3" rx="1.2" fill="currentColor"/><rect x="3" y="11" width="18" height="3" rx="1.2" fill="currentColor"/><rect x="3" y="17" width="18" height="3" rx="1.2" fill="currentColor"/></svg>
         </button>
       </div>
@@ -256,12 +258,12 @@
           </svg>
           <img src="assets/projets/racine/cover.jpg" alt="RACINE — visuel du projet" class="cover-photo" onerror="this.remove()">
           <span class="project-number">01</span>
-          <span class="photo-tile-badge">3 épisodes</span>
+          <span class="photo-tile-badge" data-i18n="episodesBadge">3 épisodes</span>
           <span class="photo-tile-hover"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12s3.5-6.5 8-6.5S20 12 20 12s-3.5 6.5-8 6.5S4 12 4 12z" stroke="white" stroke-width="1.6"/><circle cx="12" cy="12" r="2.5" stroke="white" stroke-width="1.6"/></svg></span>
         </div>
         <div class="photo-tile-caption">
           <span class="photo-tile-title">RACINE</span>
-          <span class="photo-tile-loc">3 pays · Cultural Storytelling</span>
+          <span class="photo-tile-loc" data-i18n="racineLoc">3 pays · Cultural Storytelling</span>
         </div>
       </article>
 
@@ -332,11 +334,11 @@
         </div>
         <div class="photo-tile-caption">
           <span class="photo-tile-title">OUI OUI B'DAY</span>
-          <span class="photo-tile-loc">20 ans de B'DAY · Beyoncé</span>
+          <span class="photo-tile-loc" data-i18n="bdayLoc">20 ans de B'DAY · Beyoncé</span>
         </div>
       </article>
 
-      <p class="photos-empty" id="photosEmpty">Aucun projet ne correspond à votre recherche.</p>
+      <p class="photos-empty" id="photosEmpty" data-i18n="noResults">Aucun projet ne correspond à votre recherche.</p>
     </div>
   </div>
 </section>
@@ -346,19 +348,19 @@
   <div class="hero-glow footer-glow" aria-hidden="true"></div>
   <div class="container footer-content">
     <p class="section-kicker reveal">Contact</p>
-    <h2 class="footer-title reveal">Et si j'étais votre future <span class="serif-italic">creative strategist</span> ?<br>Discutons-en</h2>
+    <h2 class="footer-title reveal" data-i18n-html="footerTitle">Et si j'étais votre future <span class="serif-italic">creative strategist</span> ?<br>Discutons-en</h2>
 
     <div class="availability-badge reveal">
       <span class="pulse-dot"></span>
-      Disponible immédiatement
+      <span data-i18n="available">Disponible immédiatement</span>
     </div>
 
     <div class="footer-cta-row reveal">
-      <a href="mailto:serenalizamandjeck@gmail.com" class="btn btn-primary">
+      <a href="mailto:serenalizamandjeck@gmail.com" class="btn btn-primary" data-i18n="contactBtn">
         Me contacter
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-      <a href="assets/cv/cv-serena-mandjeck.html" target="_blank" rel="noopener" class="btn btn-secondary">
+      <a href="assets/cv/cv-serena-mandjeck.html" target="_blank" rel="noopener" class="btn btn-secondary" data-i18n="viewCvBtn">
         Voir mon CV
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 2h6l2 2v10H4V2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 2v3h3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
       </a>
@@ -379,7 +381,7 @@
     <span class="signature signature-light reveal">Serena Mandjeck</span>
 
     <div class="footer-bottom">
-      <span>© 2026 Serena Mandjeck. Fait avec soin.</span>
+      <span data-i18n="copyright">© 2026 Serena Mandjeck. Fait avec soin.</span>
     </div>
   </div>
 </footer>
@@ -389,13 +391,13 @@
 
 <div class="sheet sheet-folder" id="modal-education" role="dialog" aria-modal="true" aria-labelledby="education-title">
   <div class="sheet-handle"></div>
-  <button class="sheet-close" data-close-modal aria-label="Fermer">✕</button>
+  <button class="sheet-close" data-close-modal data-i18n-aria="closeAria" aria-label="Fermer">✕</button>
   <div class="sheet-body">
-    <h3 id="education-title" class="sr-only-visually">Éducation</h3>
+    <h3 id="education-title" class="sr-only-visually" data-i18n="educationLabel">Éducation</h3>
     <div class="finder-card">
       <div class="finder-header">
         <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-        <span class="finder-title">Éducation.app</span>
+        <span class="finder-title" data-i18n="educationApp">Éducation.app</span>
       </div>
       <div class="finder-body">
         <div class="timeline-item">
@@ -405,13 +407,13 @@
             <div class="timeline-title">INSEEC MSc &amp; MBA</div>
             <div class="timeline-desc">MSc Marketing &amp; Data</div>
             <div class="badge-row">
-              <span class="chip">Stratégie digitale</span>
-              <span class="chip">Management de projet digital</span>
+              <span class="chip" data-i18n="mscChip1">Stratégie digitale</span>
+              <span class="chip" data-i18n="mscChip2">Management de projet digital</span>
               <span class="chip">CRM</span>
-              <span class="chip">Data &amp; Marketing Digital</span>
-              <span class="chip">Processus de création et design graphique</span>
-              <span class="chip">Scoring &amp; Marketing prédictif</span>
-              <span class="chip">Ciblage et data marketing</span>
+              <span class="chip" data-i18n="mscChip4">Data &amp; Marketing Digital</span>
+              <span class="chip" data-i18n="mscChip5">Processus de création et design graphique</span>
+              <span class="chip" data-i18n="mscChip6">Scoring &amp; Marketing prédictif</span>
+              <span class="chip" data-i18n="mscChip7">Ciblage et data marketing</span>
             </div>
           </div>
         </div>
@@ -420,11 +422,11 @@
           <div>
             <div class="timeline-date">2020 — 2023</div>
             <div class="timeline-title">INSEEC Paris</div>
-            <div class="timeline-desc">Bachelor Marketing Digital</div>
+            <div class="timeline-desc" data-i18n="bachelorDesc">Bachelor Marketing Digital</div>
             <div class="badge-row">
               <span class="chip">Brand Management</span>
-              <span class="chip">E-business et Marketing digital</span>
-              <span class="chip">Management des réseaux sociaux</span>
+              <span class="chip" data-i18n="bachChip2">E-business et Marketing digital</span>
+              <span class="chip" data-i18n="bachChip3">Management des réseaux sociaux</span>
               <span class="chip">Inbound Marketing</span>
               <span class="chip">UX Design</span>
             </div>
@@ -437,16 +439,16 @@
 
 <div class="sheet sheet-folder" id="modal-experience" role="dialog" aria-modal="true" aria-labelledby="experience-title">
   <div class="sheet-handle"></div>
-  <button class="sheet-close" data-close-modal aria-label="Fermer">✕</button>
+  <button class="sheet-close" data-close-modal data-i18n-aria="closeAria" aria-label="Fermer">✕</button>
   <div class="sheet-body">
-    <h3 id="experience-title" class="sr-only-visually">Expérience</h3>
+    <h3 id="experience-title" class="sr-only-visually" data-i18n="experienceLabel">Expérience</h3>
     <div class="finder-card">
       <div class="finder-header">
         <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-        <span class="finder-title">Expérience.app</span>
+        <span class="finder-title" data-i18n="experienceApp">Expérience.app</span>
         <a href="assets/cv/cv-serena-mandjeck.pdf" download class="finder-download-link">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>Télécharger mon CV (PDF)</span>
+          <span data-i18n="downloadCvBtn">Télécharger mon CV (PDF)</span>
         </a>
       </div>
       <div class="finder-body">
@@ -454,7 +456,7 @@
         <div class="timeline-item">
           <div class="timeline-dot dot-accent"></div>
           <div class="timeline-content">
-            <div class="timeline-date">2022 — 2025 <span class="chip chip-sm">3 ans</span> <span class="chip chip-ghost">Alternance</span></div>
+            <div class="timeline-date">2022 — 2025 <span class="chip chip-sm" data-i18n="chip3ans">3 ans</span> <span class="chip chip-ghost" data-i18n="chipAlternance">Alternance</span></div>
             <div class="timeline-company-row">
               <span class="company-logo company-logo-susu">
                 <img src="assets/entreprises/susu-logo.png" alt="Susu" onerror="this.remove()">
@@ -463,24 +465,24 @@
               <div class="timeline-title"><a href="https://www.susu.fr" target="_blank" rel="noopener" class="timeline-title-link">SUSU</a></div>
             </div>
             <div class="timeline-desc">Marketing Operations &amp; Content Strategy</div>
-            <p class="company-blurb">Healthtech qui permet à la diaspora de prendre soin de ses proches malgré la distance.</p>
+            <p class="company-blurb" data-i18n="susuBlurb">Healthtech qui permet à la diaspora de prendre soin de ses proches malgré la distance.</p>
             <ul class="mission-list">
-              <li>Pilotage d'une trentaine de campagnes Meta Ads</li>
-              <li>Segmentation de la base de données</li>
-              <li>Pilotage des campagnes emailing</li>
-              <li>Création de contenu pour les plateformes sociales (Instagram, TikTok, Facebook, LinkedIn)</li>
-              <li>Création de publicités vidéo pour la génération de leads (Meta)</li>
-              <li>Mise en place d'une dizaine de workflows d'automatisation No-Code (Make, Notion, Typeform)</li>
-              <li>Production à l'avance d'une trentaine de posts pour le contenu owned, générant plus d'1M d'impressions</li>
+              <li data-i18n="mission1a">Pilotage d'une trentaine de campagnes Meta Ads</li>
+              <li data-i18n="mission1b">Segmentation de la base de données</li>
+              <li data-i18n="mission1c">Pilotage des campagnes emailing</li>
+              <li data-i18n="mission1d">Création de contenu pour les plateformes sociales (Instagram, TikTok, Facebook, LinkedIn)</li>
+              <li data-i18n="mission1e">Création de publicités vidéo pour la génération de leads (Meta)</li>
+              <li data-i18n="mission1f">Mise en place d'une dizaine de workflows d'automatisation No-Code (Make, Notion, Typeform)</li>
+              <li data-i18n="mission1g">Production à l'avance d'une trentaine de posts pour le contenu owned, générant plus d'1M d'impressions</li>
             </ul>
-            <p class="mission-bilan"><strong>Bilan de mission :</strong> une chaîne de valeur marketing structurée de bout en bout, pensée pour que la donnée éclaire chaque décision de contenu.</p>
+            <p class="mission-bilan" data-i18n-html="bilan1"><strong>Bilan de mission :</strong> une chaîne de valeur marketing structurée de bout en bout, pensée pour que la donnée éclaire chaque décision de contenu.</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-dot dot-accent"></div>
           <div class="timeline-content">
-            <div class="timeline-date">Sept 2025 — Mars 2026 <span class="chip chip-sm">6 mois</span> <span class="chip chip-ghost">CDD</span></div>
+            <div class="timeline-date"><span data-i18n="susuCddDates">Sept 2025 — Mars 2026</span> <span class="chip chip-sm" data-i18n="chip6mois">6 mois</span> <span class="chip chip-ghost" data-i18n="chipCdd">CDD</span></div>
             <div class="timeline-company-row">
               <span class="company-logo company-logo-susu">
                 <img src="assets/entreprises/susu-logo.png" alt="Susu" onerror="this.remove()">
@@ -488,19 +490,19 @@
               </span>
               <div class="timeline-title"><a href="https://www.susu.fr" target="_blank" rel="noopener" class="timeline-title-link">SUSU</a></div>
             </div>
-            <div class="timeline-desc">Marketing Operations &amp; IA</div>
+            <div class="timeline-desc" data-i18n="momIA">Marketing Operations &amp; IA</div>
             <ul class="mission-list">
-              <li>Structuration des workflows d'automatisation autour des outils IA, pour qu'ils s'intègrent au quotidien</li>
-              <li>Formation des équipes à l'IA générative, pour en faire un réflexe plutôt qu'une nouveauté</li>
+              <li data-i18n="mission2a">Structuration des workflows d'automatisation autour des outils IA, pour qu'ils s'intègrent au quotidien</li>
+              <li data-i18n="mission2b">Formation des équipes à l'IA générative, pour en faire un réflexe plutôt qu'une nouveauté</li>
             </ul>
-            <p class="mission-bilan"><strong>Bilan de mission :</strong> plusieurs mois d'avance pris sur la rédaction d'articles et la création de posts sociaux, grâce à l'IA générative transformée en avantage opérationnel concret.</p>
+            <p class="mission-bilan" data-i18n-html="bilan2"><strong>Bilan de mission :</strong> plusieurs mois d'avance pris sur la rédaction d'articles et la création de posts sociaux, grâce à l'IA générative transformée en avantage opérationnel concret.</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-dot dot-lllk"></div>
           <div class="timeline-content">
-            <div class="timeline-date">En parallèle <span class="chip chip-purple">Collectif créatif</span></div>
+            <div class="timeline-date"><span data-i18n="inParallel">En parallèle</span> <span class="chip chip-purple" data-i18n="creativeCollective">Collectif créatif</span></div>
             <div class="timeline-company-row">
               <span class="company-logo company-logo-lllk">
                 <img src="assets/entreprises/lllk-prod-logo.png" alt="lllk.prod" onerror="this.remove()">
@@ -509,20 +511,20 @@
               <div class="timeline-title">LLLK.PROD</div>
             </div>
             <div class="timeline-desc">Creative Strategist</div>
-            <p class="company-blurb">Jeune agence créative qui rend les événements créatifs accessibles et rassemble les personnes créatives, quel que soit le budget de chacun.</p>
+            <p class="company-blurb" data-i18n="lllkBlurb">Jeune agence créative qui rend les événements créatifs accessibles et rassemble les personnes créatives, quel que soit le budget de chacun.</p>
             <ul class="mission-list">
-              <li>Conception et pilotage de 3 éditions des Ateliers Creatown (une 4ᵉ en préparation), réunissant en moyenne une cinquantaine de participants</li>
-              <li>Définition de la stratégie de contenu et de la ligne éditoriale du collectif</li>
-              <li>Création de contenu autour des événements (stories, vlogs, photos) pour prolonger l'expérience sur les réseaux</li>
-              <li>Production de contenu créatif pour OUI OUI B'DAY (festival), à paraître en septembre 2026</li>
+              <li data-i18n="mission3a">Conception et pilotage de 3 éditions des Ateliers Creatown (une 4ᵉ en préparation), réunissant en moyenne une cinquantaine de participants</li>
+              <li data-i18n="mission3b">Définition de la stratégie de contenu et de la ligne éditoriale du collectif</li>
+              <li data-i18n="mission3c">Création de contenu autour des événements (stories, vlogs, photos) pour prolonger l'expérience sur les réseaux</li>
+              <li data-i18n="mission3d">Production de contenu créatif pour OUI OUI B'DAY (festival), à paraître en septembre 2026</li>
             </ul>
-            <p class="mission-bilan"><strong>Bilan de mission :</strong> un rôle stratégique dans la structuration créative d'un collectif en pleine croissance, avec déjà 3 éditions des Ateliers Creatown à son actif.</p>
+            <p class="mission-bilan" data-i18n-html="bilan3"><strong>Bilan de mission :</strong> un rôle stratégique dans la structuration créative d'un collectif en pleine croissance, avec déjà 3 éditions des Ateliers Creatown à son actif.</p>
           </div>
         </div>
 
         <div class="badge-total">
           <span class="pulse-dot"></span>
-          3,5 ans d'expérience cumulée
+          <span data-i18n="totalExp">3,5 ans d'expérience cumulée</span>
         </div>
       </div>
     </div>
@@ -531,7 +533,7 @@
 
 <div class="sheet" id="modal-racine" role="dialog" aria-modal="true" aria-labelledby="racine-title">
   <div class="sheet-handle"></div>
-  <button class="sheet-close" data-close-modal aria-label="Fermer">✕</button>
+  <button class="sheet-close" data-close-modal data-i18n-aria="closeAria" aria-label="Fermer">✕</button>
   <span class="sheet-counter">1 / 4</span>
   <div class="sheet-cover cover-racine">
     <svg class="cover-pattern" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
@@ -541,8 +543,8 @@
       <circle cx="240" cy="50" r="34" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
     </svg>
     <img src="assets/projets/racine/cover.jpg" alt="RACINE — visuel du projet" class="cover-photo" onerror="this.remove()">
-    <button class="sheet-nav sheet-nav-prev" data-nav="-1" aria-label="Projet précédent">‹</button>
-    <button class="sheet-nav sheet-nav-next" data-nav="1" aria-label="Projet suivant">›</button>
+    <button class="sheet-nav sheet-nav-prev" data-nav="-1" data-i18n-aria="prevProjectAria" aria-label="Projet précédent">‹</button>
+    <button class="sheet-nav sheet-nav-next" data-nav="1" data-i18n-aria="nextProjectAria" aria-label="Projet suivant">›</button>
   </div>
   <div class="sheet-body">
     <div class="badge-row">
@@ -551,27 +553,27 @@
       <span class="chip">Social Media</span>
     </div>
     <h3 id="racine-title">RACINE</h3>
-    <p class="sheet-lead serif-italic">Célébrer l'héritage culturel à travers une série visuelle contemporaine, racontée en trois épisodes : trois pays, trois identités.</p>
+    <p class="sheet-lead serif-italic" data-i18n="racineLead">Célébrer l'héritage culturel à travers une série visuelle contemporaine, racontée en trois épisodes : trois pays, trois identités.</p>
 
     <div class="episode-tabs" role="tablist" aria-label="Épisodes RACINE">
-      <button class="episode-tab active" type="button" data-episode="1" role="tab" aria-selected="true">
+      <button class="episode-tab active" type="button" data-episode="1" role="tab" aria-selected="true" data-i18n="episode01">
         Épisode 01
-        <span>Haïti</span>
+        <span data-i18n="haiti">Haïti</span>
       </button>
-      <button class="episode-tab" type="button" data-episode="2" role="tab" aria-selected="false">
+      <button class="episode-tab" type="button" data-episode="2" role="tab" aria-selected="false" data-i18n="episode02">
         Épisode 02
-        <span>Jamaïque</span>
+        <span data-i18n="jamaica">Jamaïque</span>
       </button>
-      <button class="episode-tab" type="button" data-episode="3" role="tab" aria-selected="false">
+      <button class="episode-tab" type="button" data-episode="3" role="tab" aria-selected="false" data-i18n="episode03">
         Épisode 03
-        <span>Sénégal</span>
+        <span data-i18n="senegal">Sénégal</span>
       </button>
     </div>
 
     <div class="episode-panel active" data-episode-panel="1" role="tabpanel">
-      <p class="episode-intro">Premier chapitre : célébrer l'héritage culturel et l'histoire d'Haïti à travers une série visuelle contemporaine et hautement narrative.</p>
+      <p class="episode-intro" data-i18n="racineIntro1">Premier chapitre : célébrer l'héritage culturel et l'histoire d'Haïti à travers une série visuelle contemporaine et hautement narrative.</p>
       <div class="gallery-block">
-        <h4>Rendu final</h4>
+        <h4 data-i18n="finalOutput">Rendu final</h4>
         <div class="gallery-grid">
           <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/racine/episode-1/rendu/1.jpg" alt="" onerror="this.remove()"></div>
         </div>
@@ -579,9 +581,9 @@
     </div>
 
     <div class="episode-panel" data-episode-panel="2" role="tabpanel" hidden>
-      <p class="episode-intro">Deuxième chapitre : prolonger l'exploration de l'héritage culturel de la diaspora à travers l'histoire et les traditions de la Jamaïque.</p>
+      <p class="episode-intro" data-i18n="racineIntro2">Deuxième chapitre : prolonger l'exploration de l'héritage culturel de la diaspora à travers l'histoire et les traditions de la Jamaïque.</p>
       <div class="gallery-block">
-        <h4>Rendu final</h4>
+        <h4 data-i18n="finalOutput">Rendu final</h4>
         <div class="gallery-grid">
           <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/racine/episode-2/rendu/1.jpg" alt="" onerror="this.remove()"></div>
         </div>
@@ -589,22 +591,22 @@
     </div>
 
     <div class="episode-panel" data-episode-panel="3" role="tabpanel" hidden>
-      <p class="episode-intro">Troisième chapitre : célébrer l'héritage culturel et l'histoire du Sénégal à travers une série visuelle contemporaine et hautement narrative.</p>
+      <p class="episode-intro" data-i18n="racineIntro3">Troisième chapitre : célébrer l'héritage culturel et l'histoire du Sénégal à travers une série visuelle contemporaine et hautement narrative.</p>
       <div class="episode-links">
-        <a href="https://www.instagram.com/p/DZVWNZ_gBuR/?img_index=1" target="_blank" rel="noopener" class="sheet-external-link">
+        <a href="https://www.instagram.com/p/DZVWNZ_gBuR/?img_index=1" target="_blank" rel="noopener" class="sheet-external-link" data-i18n="viewPhotoIg">
           Voir la photo sur Instagram
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="https://www.instagram.com/p/DZQHuV1sB66/" target="_blank" rel="noopener" class="sheet-external-link">
+        <a href="https://www.instagram.com/p/DZQHuV1sB66/" target="_blank" rel="noopener" class="sheet-external-link" data-i18n="viewVideoIg">
           Voir la vidéo sur Instagram
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
       <div class="stat-row">
-        <div class="stat-item"><span class="stat-number">36K+</span><span class="stat-label">vues Instagram sur la dernière publication</span></div>
+        <div class="stat-item"><span class="stat-number">36K+</span><span class="stat-label" data-i18n="racineStatLabel">vues Instagram sur la dernière publication</span></div>
       </div>
       <div class="gallery-block">
-        <h4>Rendu final</h4>
+        <h4 data-i18n="finalOutput">Rendu final</h4>
         <div class="gallery-grid">
           <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/racine/episode-3/rendu/1.jpg" alt="" onerror="this.remove()"></div>
           <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/racine/episode-3/rendu/2.jpg" alt="" onerror="this.remove()"></div>
@@ -613,23 +615,23 @@
     </div>
 
     <div class="sheet-section">
-      <h4>Approche</h4>
-      <p>Direction artistique pensée comme un pont entre patrimoine et modernité : palette de couleurs inspirée des textiles et paysages locaux, direction photo narrative et grille éditoriale pensée pour le format social-first, reconduite sur les trois épisodes.</p>
+      <h4 data-i18n="approach">Approche</h4>
+      <p data-i18n="racineApproach">Direction artistique pensée comme un pont entre patrimoine et modernité : palette de couleurs inspirée des textiles et paysages locaux, direction photo narrative et grille éditoriale pensée pour le format social-first, reconduite sur les trois épisodes.</p>
     </div>
     <div class="sheet-section">
-      <h4>Rôle</h4>
-      <p>Stratégie visuelle, cadrage éditorial et pilotage de la production de contenu, du concept à la diffusion, sur chacun des trois épisodes.</p>
+      <h4 data-i18n="role">Rôle</h4>
+      <p data-i18n="racineRole">Stratégie visuelle, cadrage éditorial et pilotage de la production de contenu, du concept à la diffusion, sur chacun des trois épisodes.</p>
     </div>
     <div class="sheet-section">
       <h4>Impact</h4>
-      <p>Une identité visuelle cohérente qui valorise la richesse culturelle de chaque pays auprès d'une audience contemporaine et connectée.</p>
+      <p data-i18n="racineImpact">Une identité visuelle cohérente qui valorise la richesse culturelle de chaque pays auprès d'une audience contemporaine et connectée.</p>
     </div>
   </div>
 </div>
 
 <div class="sheet" id="modal-creatown" role="dialog" aria-modal="true" aria-labelledby="creatown-title">
   <div class="sheet-handle"></div>
-  <button class="sheet-close" data-close-modal aria-label="Fermer">✕</button>
+  <button class="sheet-close" data-close-modal data-i18n-aria="closeAria" aria-label="Fermer">✕</button>
   <span class="sheet-counter">2 / 4</span>
   <div class="sheet-cover cover-creatown">
     <svg class="cover-pattern" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
@@ -640,8 +642,8 @@
       <circle cx="150" cy="90" r="46" fill="rgba(255,255,255,0.15)"/>
     </svg>
     <img src="assets/projets/creatown/cover.jpg" alt="LES ATELIERS CREATOWN — visuel du projet" class="cover-photo" onerror="this.remove()">
-    <button class="sheet-nav sheet-nav-prev" data-nav="-1" aria-label="Projet précédent">‹</button>
-    <button class="sheet-nav sheet-nav-next" data-nav="1" aria-label="Projet suivant">›</button>
+    <button class="sheet-nav sheet-nav-prev" data-nav="-1" data-i18n-aria="prevProjectAria" aria-label="Projet précédent">‹</button>
+    <button class="sheet-nav sheet-nav-next" data-nav="1" data-i18n-aria="nextProjectAria" aria-label="Projet suivant">›</button>
   </div>
   <div class="sheet-body">
     <div class="badge-row">
@@ -650,31 +652,31 @@
     </div>
     <h3 id="creatown-title">LES ATELIERS CREATOWN</h3>
     <div class="episode-links">
-      <a href="https://www.instagram.com/stories/highlights/18087765802871971/" target="_blank" rel="noopener" class="sheet-external-link">
+      <a href="https://www.instagram.com/stories/highlights/18087765802871971/" target="_blank" rel="noopener" class="sheet-external-link" data-i18n="viewHighlightIg">
         Voir le highlight sur Instagram
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-      <a href="https://www.instagram.com/reel/DVJnyeqDHuY/" target="_blank" rel="noopener" class="sheet-external-link">
+      <a href="https://www.instagram.com/reel/DVJnyeqDHuY/" target="_blank" rel="noopener" class="sheet-external-link" data-i18n="viewVideoEd3Ig">
         Voir la vidéo (édition 3) sur Instagram
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
-    <p class="sheet-lead serif-italic">Démocratiser la création artistique dans un cadre immersif et urbain conçu pour stimuler l'engagement communautaire.</p>
+    <p class="sheet-lead serif-italic" data-i18n="creatownLead">Démocratiser la création artistique dans un cadre immersif et urbain conçu pour stimuler l'engagement communautaire.</p>
 
     <div class="stat-row">
-      <div class="stat-item"><span class="stat-number">3</span><span class="stat-label">éditions réalisées</span></div>
-      <div class="stat-item"><span class="stat-number">~50</span><span class="stat-label">participants en moyenne</span></div>
-      <div class="stat-item"><span class="stat-number">4ᵉ</span><span class="stat-label">édition en préparation</span></div>
+      <div class="stat-item"><span class="stat-number">3</span><span class="stat-label" data-i18n="editionsLabel">éditions réalisées</span></div>
+      <div class="stat-item"><span class="stat-number">~50</span><span class="stat-label" data-i18n="participantsLabel">participants en moyenne</span></div>
+      <div class="stat-item"><span class="stat-number">4ᵉ</span><span class="stat-label" data-i18n="nextEditionLabel">édition en préparation</span></div>
     </div>
 
     <div class="gallery-block">
-      <h4>Affiches</h4>
+      <h4 data-i18n="posters">Affiches</h4>
       <div class="gallery-grid">
         <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/creatown/affiches/1.png" alt="" onerror="this.remove()"></div>
       </div>
     </div>
     <div class="gallery-block">
-      <h4>Photos de l'événement</h4>
+      <h4 data-i18n="eventPhotos">Photos de l'événement</h4>
       <div class="gallery-grid">
         <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/creatown/evenement/1.jpg" alt="" onerror="this.remove()"></div>
         <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/creatown/evenement/2.jpg" alt="" onerror="this.remove()"></div>
@@ -682,23 +684,23 @@
     </div>
 
     <div class="sheet-section">
-      <h4>Approche</h4>
-      <p>Conception d'une expérience de marque physique où chaque atelier devient un moment partageable : scénographie urbaine, parcours pensé pour la captation photo/vidéo et animation communautaire en temps réel.</p>
+      <h4 data-i18n="approach">Approche</h4>
+      <p data-i18n="creatownApproach">Conception d'une expérience de marque physique où chaque atelier devient un moment partageable : scénographie urbaine, parcours pensé pour la captation photo/vidéo et animation communautaire en temps réel.</p>
     </div>
     <div class="sheet-section">
-      <h4>Rôle</h4>
-      <p>Conception de l'expérience événementielle, stratégie de community building et activation du contenu généré par les participants.</p>
+      <h4 data-i18n="role">Rôle</h4>
+      <p data-i18n="creatownRole">Conception de l'expérience événementielle, stratégie de community building et activation du contenu généré par les participants.</p>
     </div>
     <div class="sheet-section">
       <h4>Impact</h4>
-      <p>3 éditions déjà réalisées, réunissant en moyenne une cinquantaine de participants, et une 4ᵉ en préparation : la preuve d'un format qui trouve son public.</p>
+      <p data-i18n="creatownImpact">3 éditions déjà réalisées, réunissant en moyenne une cinquantaine de participants, et une 4ᵉ en préparation : la preuve d'un format qui trouve son public.</p>
     </div>
   </div>
 </div>
 
 <div class="sheet" id="modal-podcast" role="dialog" aria-modal="true" aria-labelledby="podcast-title">
   <div class="sheet-handle"></div>
-  <button class="sheet-close" data-close-modal aria-label="Fermer">✕</button>
+  <button class="sheet-close" data-close-modal data-i18n-aria="closeAria" aria-label="Fermer">✕</button>
   <span class="sheet-counter">3 / 4</span>
   <div class="sheet-cover cover-podcast">
     <svg class="cover-pattern" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
@@ -709,8 +711,8 @@
       </g>
     </svg>
     <img src="assets/projets/podcast/cover.jpg" alt="PODCAST VISION 360 — visuel du projet" class="cover-photo" onerror="this.remove()">
-    <button class="sheet-nav sheet-nav-prev" data-nav="-1" aria-label="Projet précédent">‹</button>
-    <button class="sheet-nav sheet-nav-next" data-nav="1" aria-label="Projet suivant">›</button>
+    <button class="sheet-nav sheet-nav-prev" data-nav="-1" data-i18n-aria="prevProjectAria" aria-label="Projet précédent">‹</button>
+    <button class="sheet-nav sheet-nav-next" data-nav="1" data-i18n-aria="nextProjectAria" aria-label="Projet suivant">›</button>
   </div>
   <div class="sheet-body">
     <div class="badge-row">
@@ -719,19 +721,19 @@
       <span class="chip">Editorial</span>
     </div>
     <h3 id="podcast-title">PODCAST VISION 360</h3>
-    <a href="https://www.instagram.com/reel/DUyhBeHE_lE/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" class="sheet-external-link">
+    <a href="https://www.instagram.com/reel/DUyhBeHE_lE/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" class="sheet-external-link" data-i18n="viewAnnouncementIg">
       Voir l'annonce sur Instagram
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
-    <p class="sheet-lead serif-italic">Révéler l'envers du décor de la scène créative parisienne via un écosystème média multi-format (Long-form ➔ Short-form).</p>
+    <p class="sheet-lead serif-italic" data-i18n="podcastLead">Révéler l'envers du décor de la scène créative parisienne via un écosystème média multi-format (Long-form ➔ Short-form).</p>
 
     <span class="status-note">
       <span class="pulse-dot"></span>
-      1er épisode disponible, la suite du programme est en préparation
+      <span data-i18n="podcastStatus">1er épisode disponible, la suite du programme est en préparation</span>
     </span>
 
     <div class="gallery-block">
-      <h4>Coulisses (BTS)</h4>
+      <h4 data-i18n="bts">Coulisses (BTS)</h4>
       <div class="gallery-grid">
         <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/podcast/bts/1.jpg" alt="" onerror="this.remove()"></div>
         <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/podcast/bts/2.jpg" alt="" onerror="this.remove()"></div>
@@ -739,23 +741,23 @@
     </div>
 
     <div class="sheet-section">
-      <h4>Approche</h4>
-      <p>Construction d'un moteur éditorial pensé pour la démultiplication : tournages long-format repensés en une cascade de formats courts adaptés à chaque plateforme, calendrier de repurposing et ligne éditoriale cohérente.</p>
+      <h4 data-i18n="approach">Approche</h4>
+      <p data-i18n="podcastApproach">Construction d'un moteur éditorial pensé pour la démultiplication : tournages long-format repensés en une cascade de formats courts adaptés à chaque plateforme, calendrier de repurposing et ligne éditoriale cohérente.</p>
     </div>
     <div class="sheet-section">
-      <h4>Rôle</h4>
-      <p>Stratégie de contenu, structuration de la chaîne de production média et pilotage éditorial du repurposing multi-format.</p>
+      <h4 data-i18n="role">Rôle</h4>
+      <p data-i18n="podcastRole">Stratégie de contenu, structuration de la chaîne de production média et pilotage éditorial du repurposing multi-format.</p>
     </div>
     <div class="sheet-section">
       <h4>Impact</h4>
-      <p>Un premier épisode qui pose les bases d'un écosystème média pensé pour durer, avec une ligne éditoriale et un moteur de repurposing déjà prêts pour la suite du programme.</p>
+      <p data-i18n="podcastImpact">Un premier épisode qui pose les bases d'un écosystème média pensé pour durer, avec une ligne éditoriale et un moteur de repurposing déjà prêts pour la suite du programme.</p>
     </div>
   </div>
 </div>
 
 <div class="sheet" id="modal-ouiouibday" role="dialog" aria-modal="true" aria-labelledby="ouiouibday-title">
   <div class="sheet-handle"></div>
-  <button class="sheet-close" data-close-modal aria-label="Fermer">✕</button>
+  <button class="sheet-close" data-close-modal data-i18n-aria="closeAria" aria-label="Fermer">✕</button>
   <span class="sheet-counter">4 / 4</span>
   <div class="sheet-cover cover-ouiouibday">
     <svg class="cover-pattern" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
@@ -765,8 +767,8 @@
       <circle cx="230" cy="60" r="14" fill="rgba(255,255,255,0.25)"/>
     </svg>
     <img src="assets/projets/ouiouibday/cover.jpg" alt="OUI OUI B'DAY — visuel du projet" class="cover-photo" onerror="this.remove()">
-    <button class="sheet-nav sheet-nav-prev" data-nav="-1" aria-label="Projet précédent">‹</button>
-    <button class="sheet-nav sheet-nav-next" data-nav="1" aria-label="Projet suivant">›</button>
+    <button class="sheet-nav sheet-nav-prev" data-nav="-1" data-i18n-aria="prevProjectAria" aria-label="Projet précédent">‹</button>
+    <button class="sheet-nav sheet-nav-next" data-nav="1" data-i18n-aria="nextProjectAria" aria-label="Projet suivant">›</button>
   </div>
   <div class="sheet-body">
     <div class="badge-row">
@@ -775,20 +777,20 @@
       <span class="chip">Fan Culture</span>
     </div>
     <h3 id="ouiouibday-title">OUI OUI B'DAY</h3>
-    <a href="https://www.instagram.com/p/DZuSopBgFzJ/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" class="sheet-external-link">
+    <a href="https://www.instagram.com/p/DZuSopBgFzJ/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" class="sheet-external-link" data-i18n="viewRecapIg">
       Voir le récap sur Instagram
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
-    <p class="sheet-lead serif-italic">Commémorer les 20 ans de l'album B'DAY de Beyoncé, en collaboration avec HelloYouArtist et BeyhiveFrance.</p>
+    <p class="sheet-lead serif-italic" data-i18n="bdayLead">Commémorer les 20 ans de l'album B'DAY de Beyoncé, en collaboration avec HelloYouArtist et BeyhiveFrance.</p>
 
     <div class="gallery-block">
-      <h4>Affiches</h4>
+      <h4 data-i18n="posters">Affiches</h4>
       <div class="gallery-grid">
         <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/ouiouibday/affiches/1.jpg" alt="" onerror="this.remove()"></div>
       </div>
     </div>
     <div class="gallery-block">
-      <h4>Photos de l'événement</h4>
+      <h4 data-i18n="eventPhotos">Photos de l'événement</h4>
       <div class="gallery-grid">
         <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/ouiouibday/evenement/1.png" alt="" onerror="this.remove()"></div>
         <div class="gallery-slot"><svg class="gallery-placeholder-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.5"/></svg><img src="assets/projets/ouiouibday/evenement/2.png" alt="" onerror="this.remove()"></div>
@@ -798,29 +800,30 @@
     </div>
 
     <div class="sheet-section">
-      <h4>Approche</h4>
-      <p>Un festival pensé comme un hommage collectif, construit en collaboration avec HelloYouArtist et BeyhiveFrance pour célébrer les 20 ans de B'DAY à la croisée de la culture pop et de la communauté fan.</p>
+      <h4 data-i18n="approach">Approche</h4>
+      <p data-i18n="bdayApproach">Un festival pensé comme un hommage collectif, construit en collaboration avec HelloYouArtist et BeyhiveFrance pour célébrer les 20 ans de B'DAY à la croisée de la culture pop et de la communauté fan.</p>
     </div>
     <div class="sheet-section">
-      <h4>Rôle</h4>
-      <p>lllk.prod était en charge de la création de contenu photo (publié) et de contenu vidéo, qui fera son apparition dans un format long à paraître en septembre 2026.</p>
+      <h4 data-i18n="role">Rôle</h4>
+      <p data-i18n="bdayRole">lllk.prod était en charge de la création de contenu photo (publié) et de contenu vidéo, qui fera son apparition dans un format long à paraître en septembre 2026.</p>
     </div>
     <div class="sheet-section">
       <h4>Impact</h4>
-      <p><em>Résultats à préciser.</em></p>
+      <p data-i18n-html="bdayImpact"><em>Résultats à préciser.</em></p>
     </div>
   </div>
 </div>
 
 <!-- ================= LIGHTBOX (Instagram-style image zoom) ================= -->
 <div class="lightbox-backdrop" id="lightboxBackdrop">
-  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer l'image">✕</button>
-  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Image précédente">‹</button>
+  <button class="lightbox-close" id="lightboxClose" data-i18n-aria="closeImageAria" aria-label="Fermer l'image">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" data-i18n-aria="prevImageAria" aria-label="Image précédente">‹</button>
   <img class="lightbox-img" id="lightboxImg" src="" alt="">
-  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Image suivante">›</button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" data-i18n-aria="nextImageAria" aria-label="Image suivante">›</button>
   <span class="lightbox-counter" id="lightboxCounter"></span>
 </div>
 
 <script src="js/script.js?v=3"></script>
+<script src="js/i18n.js?v=1"></script>
 </body>
 </html>
